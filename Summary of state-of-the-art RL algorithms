@@ -1,0 +1,179 @@
+<table>
+    <tr>
+        <td>\textbf{Alg.}</td>
+        <td>\textbf{Type}</td>
+        <td>\textbf{Action space}</td>
+        <td>\textbf{Policy}</td>
+        <td>\textbf{Family}</td>
+        <td>\textbf{Strengths}</td>
+        <td>\textbf{Limitations}</td>
+    </tr>
+    <tr>
+        <td>Q-Learning (tabular)</td>
+        <td>Model-free</td>
+        <td>Discrete</td>
+        <td>Off-policy</td>
+        <td>Value-based</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Very simple and interpretable baseline; useful for small state spaces and as red-team baseline</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>SARSA (tabular)</td>
+        <td>Model-free</td>
+        <td>Discrete</td>
+        <td>On-policy</td>
+        <td>Value-based</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>On-policy updates can be steadier under non-stationarity; simple to implement; common baseline</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Deep SARSA</td>
+        <td>Model-free</td>
+        <td>Discrete</td>
+        <td>On-policy</td>
+        <td>Value-based</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Improved multi-class intrusion detection (NSL-KDD, UNSW-NB15)</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DQN</td>
+        <td>Model-free</td>
+        <td>Discrete</td>
+        <td>Off-policy</td>
+        <td>Value-based</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Baseline for discrete actions; replay buffer improves efficiency</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DDQN</td>
+        <td>Model-free</td>
+        <td>Discrete</td>
+        <td>Off-policy</td>
+        <td>Value-based</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Mitigates DQN overestimation; stable with target network and replay</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Dueling-DQN</td>
+        <td>Model-free</td>
+        <td>Discrete</td>
+        <td>Off-policy</td>
+        <td>Value-based</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Separates $V(s)$ and advantage to improve value estimates; stronger than DQN in several comparisons</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>PPO</td>
+        <td>Model-free</td>
+        <td>Continuous / Discrete</td>
+        <td>On-policy</td>
+        <td>Policy-gradient (SPG\textsuperscript{1})</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Stable clipped updates; widely reproducible across tasks</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>A2C</td>
+        <td>Model-free</td>
+        <td>Discrete</td>
+        <td>On-policy</td>
+        <td>Policy-gradient (SPG\textsuperscript{1})</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Simple baseline; advantage estimation stabilizes updates</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>A3C</td>
+        <td>Model-free</td>
+        <td>Continuous / Discrete</td>
+        <td>On-policy</td>
+        <td>Policy-gradient (SPG\textsuperscript{1})</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Asynchronous parallel workers speed wall-clock learning; strong baseline</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Actor–Critic (generic)</td>
+        <td>Model-free</td>
+        <td>Continuous</td>
+        <td>Varies (on/off)</td>
+        <td>Actor–Critic</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Combines critic stability with expressive policy; handles large action spaces</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DDPG</td>
+        <td>Model-free</td>
+        <td>Continuous</td>
+        <td>Off-policy</td>
+        <td>Actor–Critic (DPG\textsuperscript{2})</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Continuous actions for fine-grained defense; replay improves data efficiency</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>RRIoT\textsuperscript{3}</td>
+        <td>Model-free</td>
+        <td>Continuous</td>
+        <td>Off-policy</td>
+        <td>Actor–Critic (DPG\textsuperscript{2})</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Handles sequential IoT traffic; recurrent encoder improves partial observability</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>MAPPO</td>
+        <td>Model-free</td>
+        <td>Discrete</td>
+        <td>On-policy</td>
+        <td>Actor–Critic (SPG\textsuperscript{1})</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Shared critic accelerated convergence; outperformed IPPO in maritime OT</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>SAC</td>
+        <td>Model-free</td>
+        <td>Continuous</td>
+        <td>Off-policy</td>
+        <td>Actor–Critic (Max-Entropy\textsuperscript{4})</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>High sample efficiency and stability via entropy regularization; robust for continuous control/response</td>
+        <td></td>
+    </tr>
+</table>
